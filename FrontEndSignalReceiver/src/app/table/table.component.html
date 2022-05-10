@@ -1,0 +1,17 @@
+
+<table class="table table-bordered border-primary">
+<thead>
+    <tr class="table-primary">
+    <th scope="col">Timestamp</th>
+    <th scope="col">Tag</th>
+    <th scope="col">Valor</th>
+    </tr>
+</thead>
+<tbody *ngIf="signalList">
+    <tr *ngFor="let signal of signalList">
+    <td>{{ signal.time_stamp }}</td>
+    <td>{{ signal.tag }}</td>
+    <td>{{ signal.valor }}</td>
+    </tr>
+</tbody>
+</table>
